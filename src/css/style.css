@@ -1,0 +1,214 @@
+/*---CABEÇALHO---*/
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 25px 0;
+    flex-wrap: wrap;
+}
+
+.cabecalho .logo {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho .logo .imagem {
+    width: 100px;
+}
+
+.cabecalho .logo .titulo {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-left: 7px;
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover .titulo {
+    color: #1ED760;
+}
+
+.navecacao .menu {
+    display: flex;
+}
+
+.navecacao .menu .item {
+    font-size: 1.6rem;
+    margin: 10px;
+}
+
+.navecacao .menu .item a {
+    padding: 15px;
+}
+
+.navecacao .menu .item a:hover {
+    color: #fff;
+    background-color: #1ED760;
+    transition: 0.3s ease-in-out;
+}
+
+/*---CONTEUDO PRINCIPAL---*/
+
+/*---SEÇÃO PAINEL---*/
+
+.conteudo-principal .secao-painel {
+    position: relative;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .conteudo-principal .secao-painel {
+        height: 500px;
+    }
+}
+
+.secao-painel h1 {
+    font-size: calc(1.6em + 1vw);
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.secao-painel .seta {
+    width: 34px;
+    height: 50px;
+    position: absolute;
+    text-indent: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.secao-painel .seta.btn-avancar {
+    right: 0;
+    margin-right: 30px;
+}
+
+.secao-painel .seta.btn-voltar {
+    left: 0;
+    margin-left: 30px;
+    transform: rotate(180deg);
+}
+
+.conteudo-principal .secao-painel .imagem-painel {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: brightness(70%);
+    z-index: -1;
+    opacity: 0;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.secao-painel .imagem-painel.painel1 {
+    background-image: url(../imagens/painel1.jpg);
+}
+
+.secao-painel .imagem-painel.mostrar {
+    opacity: 1;
+}
+
+.secao-painel .imagem-painel.painel2 {
+    background-image: url(../imagens/painel2.jpg);
+}
+
+.secao-painel .imagem-painel.painel3 {
+    background-image: url(../imagens/painel3.jpg);
+}
+
+/*---CONTEUDO PRINCIPAL---*/
+
+/*---SEÇÃO QUEM SOMOS---*/
+
+.conteudo-principal .secao-quem-somos {
+    background-color: #2941AB;
+}
+
+.secao-quem-somos .conteudo {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.informacao h2 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: #1ED760;
+}
+
+.informacao .texto {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #fff;
+}
+
+.secao-quem-somos .imagem {
+    width: 60%;
+}
+
+/*---RODAPE---*/
+
+.rodape {
+    padding: 80px 0 20px 0;
+}
+
+.rodape .navecacao {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navecacao .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navecacao .logo .titulo {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-left: 7px;
+}
+
+.navecacao .logo .imagem {
+    width: 100px;
+}
+
+.rodape .navecacao .redes-sociais {
+    display: flex;
+}
+
+.rodape .navecacao .redes-sociais .rede-social {
+    border: 2px solid #111;
+    border-radius: 50%;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    padding: 15px;
+    width: 65px;
+}
+
+.rodape .navecacao .redes-sociais .rede-social:hover {
+    background-color: #1ED760;
+    transition: 0.3s ease-in-out;
+}
+
+.rodape .texto-copyright {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+

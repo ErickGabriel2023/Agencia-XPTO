@@ -1,0 +1,38 @@
+@media (max-width: 650px) {
+    .cabecalho {
+        flex-direction: column;
+    }
+
+    .navecacao .menu {
+        margin-top: 35px;
+    }
+
+    .navecacao .menu .item a{
+        font-size: calc(0.6em + 1vw);
+    }
+}
+
+@media (max-width: 1200px) {
+    .secao-quem-somos .conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .conteudo .informacao {
+        padding: 100px 30px;
+    }
+    
+    .secao-quem-somos .imagem {
+        display: none;
+    }
+}
+
+@media (max-width: 540px) {
+    .rodape .navecacao {
+        flex-direction: column;
+    }
+
+    .rodape .navecacao .redes-sociais {
+        margin-top: 30px;
+    }
+}
